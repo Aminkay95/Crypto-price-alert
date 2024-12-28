@@ -9,7 +9,7 @@ from email.mime.multipart import MIMEMultipart
 
 
 
-
+# This function gets current price for the coins from the coinmarketcap api and returns a key value pair of the name of the coin and its price
 
 def crypto_rates(base_currency = 'USD', assests = 'bitcoin,ethereum,xrp' ):
     url = 'https://pro-api.coinmarketcap.com/v2/cryptocurrency/quotes/latest'
@@ -35,7 +35,7 @@ def crypto_rates(base_currency = 'USD', assests = 'bitcoin,ethereum,xrp' ):
 
 
 
-
+# Function to send email alert 
 def setAlert(subject, body, to_email):
 
      
